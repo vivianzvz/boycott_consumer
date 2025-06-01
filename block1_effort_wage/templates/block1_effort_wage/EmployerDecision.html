@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% block content %}
+
+<h3>Final Wage Decision</h3>
+<p>The worker has completed their task. You can now decide how much to actually pay them.</p>
+
+<p><strong>They solved {{ correct_sums }} problems correctly.</strong></p>
+
+{{ formfields }}
+
+
+<div style="border: 1px solid #ccc; background-color: #f8f9fa; padding: 12px; border-radius: 6px; margin-bottom: 20px;">
+    <strong>How your payoff is calculated:</strong>
+    <ul style="margin: 8px 0 0 16px;">
+        <li><strong>Employer’s payoff</strong> = number of correct sums – wage paid</li>
+        <li><strong>Worker’s payoff</strong> = wage received</li>
+    </ul>
+</div>
+
+{% next_button %}
+{% endblock %}

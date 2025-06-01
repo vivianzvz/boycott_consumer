@@ -1,0 +1,23 @@
+{% extends "global/Page.html" %}
+{% block content %}
+
+<h2>Welcome to the Study</h2>
+
+<p style="line-height: 1.8;">
+    There are two stages in this experiment.
+</p>
+
+<ul style="line-height: 1.8; margin-bottom: 20px;">
+    <li><strong>Block 1</strong>: A single-round interaction between an employer and a worker. <br>
+        <em>Instructions will appear before Block 1 begins.</em></li>
+    <li><strong>Block 2</strong>: A multi-round interaction with new roles and decisions. <br>
+        <em>Instructions will appear before Block 2 begins.</em></li>
+</ul>
+
+<p style="line-height: 1.8;">
+    Your total earnings will be the sum of your Block 1 payoff and a randomly selected round from Block 2.
+</p>
+
+{% next_button %}
+
+{% endblock %}

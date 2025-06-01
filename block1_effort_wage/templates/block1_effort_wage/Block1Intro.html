@@ -1,0 +1,36 @@
+{% extends "global/Page.html" %}
+{% block content %}
+
+<!-- Single-line right-aligned info bar -->
+<div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+    <div style="background-color: #f2f2f2; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; font-size: 14px;">
+        <strong>Block 1</strong> |
+        <strong>Round {{ subsession.round_number }}</strong> |
+        <strong>Player ID {{ player.id_in_group }}</strong>
+    </div>
+</div>
+
+<h2>Block 1 Instructions</h2>
+
+<div style="border: 1px solid #ccc; padding: 16px; background-color: #fefefe;">
+    <ul style="margin-bottom: 16px;">
+        <li>You will be randomly matched into pairs in each round.</li>
+        <li>Each pair consists of an <strong>Employer</strong> and a <strong>Worker</strong>.</li>
+        <li>The employer will:
+            <ul>
+                <li>Make a <strong>non-binding wage offer</strong></li>
+                <li>Write a message to the worker</li>
+            </ul>
+        </li>
+        <li>The worker’s task is to <strong>add up to 30 pairs of single-digit numbers</strong>.</li>
+    </ul>
+
+    <p><strong>Payoff rules:</strong></p>
+    <ul>
+        <li><strong>Employer’s payoff</strong> = number of correct sums – wage paid</li>
+        <li><strong>Worker’s payoff</strong> = wage received</li>
+    </ul>
+</div>
+
+{% next_button %}
+{% endblock %}

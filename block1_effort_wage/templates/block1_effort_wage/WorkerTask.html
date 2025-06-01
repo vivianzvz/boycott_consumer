@@ -1,0 +1,53 @@
+{% extends "global/Page.html" %}
+{% block content %}
+<div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+    <div style="background-color: #f2f2f2; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; font-size: 14px;">
+        <strong>Block 1</strong> |
+        <strong>Round {{ subsession.round_number }}</strong> |
+        <strong>Player ID {{ player.id_in_group }}</strong>
+    </div>
+</div>
+
+<h3>Task </h3>
+
+<style>
+    .employer-box {
+        border: 2px solid #5e9cd8;
+        background-color: #eef5fc;
+        padding: 12px;
+        margin-bottom: 25px;
+        border-radius: 6px;
+    }
+</style>
+
+<div class="employer-box">
+    <strong>Your employer says:</strong> {{ employer_message }}
+</div>
+
+<p>Please solve the following math problems:</p>
+
+<ol>
+  {% for fieldname, question in labeled_pairs %}
+    <li>
+        <strong>{{ question.0 }} + {{ question.1 }} =</strong><br>
+        {{ formfield fieldname }}
+    </li>
+  {% endfor %}
+</ol>
+
+{% next_button %}
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('input').forEach(function(input) {
+            input.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+        });
+    });
+</script>
+
+{% endblock %}

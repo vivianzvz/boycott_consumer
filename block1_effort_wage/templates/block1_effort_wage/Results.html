@@ -1,0 +1,12 @@
+{% extends "global/Page.html" %}
+{% block content %}
+<h3>Block 1 Results</h3>
+<p><strong>Employer's Initial Offer:</strong> {{ offer }}</p>
+<p><strong>Employer's Message:</strong> {{ message }}</p>
+<p><strong>Correct Sums Solved by Worker:</strong> {{ sums }}</p>
+<!-- <p><strong>Final Wage Paid:</strong> {{ final }}</p> -->
+<p><strong>Worker's Payoff (Final Wage):</strong> {{ worker_payoff }}</p>
+<p><strong>Employer's Payoff:</strong> {{ employer_payoff }}</p>
+
+{% next_button %}
+{% endblock %}

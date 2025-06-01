@@ -1,0 +1,41 @@
+{% extends "global/Page.html" %}
+
+{% block content %}
+
+<div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+    <div style="background-color: #f2f2f2; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; font-size: 14px;">
+        <strong>Block 2</strong> |
+        <strong>Round {{ subsession.round_number }}</strong> |
+        <strong>Player ID {{ player.id_in_group }}</strong>
+    </div>
+</div>
+
+<h3>Decision</h3>
+<!-- Conditional fairness message -->
+{% if treatment == 'T1' %}
+<div style="border: 1px solid black; padding: 12px; margin-bottom: 20px;">
+    <strong>Fairness Message</strong>
+    <p>
+        “There were two employers for which their worker exerted positive efforts. One (Employer {{ seller_A }}) paid a low salary that was regarded as unfair, and the other (Employer {{ seller_B }}) paid a high salary that was regarded as fair.”
+    </p>
+</div>
+{% elif treatment == 'T2' %}
+<div style="border: 1px solid black; padding: 12px; margin-bottom: 20px;">
+    <strong>Fairness Reminder</strong>
+    <p>
+        Knowing that Employer {{ seller_A }} is regarded as unfair and Employer {{ seller_B }} is regarded as fair based on how they paid their workers,
+        and that <em><strong>{{ num_supporters }} out of {{ group_size }}</strong> customers support the boycott against seller A and are not buying from them</em>,
+        please make your decision below.
+    </p>
+</div>
+
+{% endif %}
+
+
+
+<p>Which seller would you like to buy from?</p>
+{{ formfields }}
+
+{% next_button %}
+
+{% endblock %}

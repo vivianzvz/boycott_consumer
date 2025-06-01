@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% block content %}
+
+<div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+    <div style="background-color: #f2f2f2; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; font-size: 14px;">
+        <strong>Block 2</strong> |
+        <strong>Round {{ subsession.round_number }}</strong> |
+        <strong>Player ID {{ player.id_in_group }}</strong>
+    </div>
+</div>
+
+<h3>Block 2 Instructions</h3>
+
+<p>In this block, you will act as a buyer in a market. The object is worth 7 points to you.</p>
+<p>You will choose between two sellers offering different prices. Your payoff this round is:</p>
+
+<p style="margin-left: 20px;"><strong>7 – Price Paid</strong></p>
+
+{% next_button %}
+
+{% endblock %}

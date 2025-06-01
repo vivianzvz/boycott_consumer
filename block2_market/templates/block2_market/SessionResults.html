@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+{% block content %}
+<h3>Session Results</h3>
+
+<p>Block 1 payoff: <strong>{{ block1_payoff }}</strong></p>
+<p>Block 2 (round {{ session.vars.block2_payoff_round }}) payoff: <strong>{{ block2_payoff }}</strong></p>
+<p>Total points: <strong>{{ total_points }}</strong></p>
+
+<p>Conversion rate: ${{ conversion_rate }} per point</p>
+<p><strong>Total earnings: ${{ total_earnings }}</strong></p>
+
+<p style="margin-top:20px; font-style:italic;">
+    Your total earnings are based on your total points from both blocks, converted using the rate shown above.
+</p>
+{% endblock %}

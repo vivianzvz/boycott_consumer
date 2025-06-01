@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% block content %}
+
+<div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+    <div style="background-color: #f2f2f2; border: 1px solid #ccc; padding: 8px 16px; border-radius: 6px; font-size: 14px;">
+        <strong>Block 1</strong> |
+        <strong>Round {{ subsession.round_number }}</strong> |
+        <strong>Player ID {{ player.id_in_group }}</strong>
+    </div>
+</div>
+
+<h3>Employer's Initial Offer</h3>
+<p>Please specify the wage you wish to offer to the worker. This offer is non-binding.</p>
+{{ formfields }}
+{% next_button %}
+{% endblock %}
