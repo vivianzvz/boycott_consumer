@@ -3,7 +3,7 @@
 This repository contains the oTree implementation of the Consumer Decision Market Game, created for ECON 165 at UC Santa Cruz. The project idea originated from Luke Catalano, Sadhika Agrawal and Derek Zhao.
 
 ## 🧠 Purpose
-The experiment explores fairness and market behavior through two blocks:
+The experiment explores seller fairness reputations and market behavior through two blocks:
 
 - **Block 1** is a simple employer-worker task:
   - Employers offer wages and workers solve math problems.
