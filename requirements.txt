@@ -2,4 +2,4 @@
 # IF YOU MODIFY THIS FILE, remove this comment.
 # otherwise, oTree will automatically overwrite it.
 otree>=5.0.0a21
-psycopg2>=2.8.4
+psycopg2-binary>=2.8.4

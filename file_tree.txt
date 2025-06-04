@@ -1,0 +1,97 @@
+|-- .
+|-- _templates
+    |-- global
+|-- block1_effort_wage
+    |-- templates
+        |-- block1_effort_wage
+|-- _static
+    |-- global
+|-- shared
+|-- block2_market
+    |-- templates
+        |-- block2_market
+|-- venv
+    |-- bin
+    |-- lib
+        |-- python3.12
+            |-- site-packages
+                |-- pip-24.0.dist-info
+                |-- pip
+                    |-- _internal
+                        |-- network
+                        |-- utils
+                        |-- models
+                        |-- cli
+                        |-- operations
+                            |-- install
+                            |-- build
+                        |-- req
+                        |-- resolution
+                            |-- legacy
+                            |-- resolvelib
+                        |-- vcs
+                        |-- locations
+                        |-- index
+                        |-- commands
+                        |-- metadata
+                            |-- importlib
+                        |-- distributions
+                    |-- _vendor
+                        |-- packaging
+                        |-- truststore
+                        |-- msgpack
+                        |-- chardet
+                            |-- cli
+                            |-- metadata
+                        |-- webencodings
+                        |-- pygments
+                            |-- filters
+                            |-- lexers
+                            |-- formatters
+                            |-- styles
+                        |-- distlib
+                        |-- pyparsing
+                            |-- diagram
+                        |-- distro
+                        |-- colorama
+                            |-- tests
+                        |-- cachecontrol
+                            |-- caches
+                        |-- idna
+                        |-- tenacity
+                        |-- requests
+                        |-- tomli
+                        |-- certifi
+                        |-- pyproject_hooks
+                            |-- _in_process
+                        |-- rich
+                        |-- urllib3
+                            |-- util
+                            |-- contrib
+                                |-- _securetransport
+                            |-- packages
+                                |-- backports
+                        |-- pkg_resources
+                        |-- resolvelib
+                            |-- compat
+                        |-- platformdirs
+|-- .git
+    |-- objects
+        |-- 0b
+        |-- 34
+        |-- pack
+        |-- info
+        |-- f7
+        |-- cb
+    |-- info
+    |-- logs
+        |-- refs
+            |-- heads
+            |-- remotes
+                |-- origin
+    |-- hooks
+    |-- refs
+        |-- heads
+        |-- tags
+        |-- remotes
+            |-- origin
