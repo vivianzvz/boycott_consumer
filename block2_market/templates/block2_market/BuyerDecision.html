@@ -16,7 +16,7 @@
 <div style="border: 1px solid black; padding: 12px; margin-bottom: 20px;">
     <strong>Fairness Message</strong>
     <p>
-        “There were two employers for which their worker exerted positive efforts. One (Employer {{ seller_A }}) paid a low salary that was regarded as unfair, and the other (Employer {{ seller_B }}) paid a high salary that was regarded as fair.”
+        “There were two employers/sellers for which their worker exerted positive efforts. One (Employer {{ seller_A }}) paid a low salary that was regarded as unfair, and the other (Employer {{ seller_B }}) paid a high salary that was regarded as fair.”
     </p>
 </div>
 {% elif treatment == 'T2' %}
@@ -24,7 +24,7 @@
     <strong>Fairness Reminder</strong>
     <p>
         Knowing that Employer {{ seller_A }} is regarded as unfair and Employer {{ seller_B }} is regarded as fair based on how they paid their workers,
-        and that <em><strong>{{ num_supporters }} out of {{ group_size }}</strong> customers support the boycott against seller A and are not buying from them</em>,
+        and that <em><strong>{{ num_supporters }} out of {{ group_size }}</strong> customers support the boycott against employer/seller A and are not buying from them</em>,
         please make your decision below.
     </p>
 </div>
@@ -33,7 +33,7 @@
 
 
 
-<p>Which seller would you like to buy from?</p>
+<p>Which employer/seller would you like to buy from?</p>
 {{ formfields }}
 
 {% next_button %}
